@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WhatsApp Web Clone</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="container">
+        <!-- Sidebar -->
+        <div class="sidebar">
+            <!-- Profile section (profile image and settings icon) -->
+            <div class="profile-section">
+                <img src="img/user.jpg" alt="Profile Image" class="profile-img">
+                <div class="profile-name">Goldblue</div>
+                <div class="profile-icons">
+                    <img src="img/status-icon.png" alt="Status" class="icon">
+                    <img src="img/message-icon.png" alt="New Chat" class="icon">
+                    <img src="img/menu-icon.png" alt="Menu" class="icon">
+                </div>
+            </div>
+
+            <!-- Search Bar -->
+            <header>
+                <div class="search-bar">
+                    <input type="text" placeholder="Search or start new chat" id="searchInput">
+                    <button class="search-icon"><img src="img/search-icon.png" alt="Search"></button>
+                </div>
+            </header>
+
+            <!-- Contact List (8 users) -->
+            <div class="contact-list" id="contactList">
+                <div class="contact" data-user="1">
+                    <img src="img/img1.jpg" alt="User 1">
+                    <div class="contact-info">
+                        <h4>hanna</h4>
+                        <p>Last message...</p>
+                        <span class="time">Yesterday</span>
+                    </div>
+                </div>
+                <div class="contact" data-user="2">
+                    <img src="img/img2.jpg" alt="User 2">
+                    <div class="contact-info">
+                        <h4>sara</h4>
+                        <p>Last message...</p>
+                        <span class="time">Yesterday</span>
+                    </div>
+                </div>
+                <div class="contact" data-user="3">
+                    <img src="img/img3.jpg" alt="User 3">
+                    <div class="contact-info">
+                        <h4>mark fool</h4>
+                        <p>Last message...</p>
+                        <span class="time">Yesterday</span>
+                    </div>
+                </div>
+                <div class="contact" data-user="4">
+                    <img src="img/img4.jpg" alt="User 4">
+                    <div class="contact-info">
+                        <h4>bad ass girl</h4>
+                        <p>Last message...</p>
+                        <span class="time">Yesterday</span>
+                    </div>
+                </div>
+                <div class="contact" data-user="5">
+                    <img src="img/img5.jpg" alt="User 5">
+                    <div class="contact-info">
+                        <h4>church girl</h4>
+                        <p>Last message...</p>
+                        <span class="time">Yesterday</span>
+                    </div>
+                </div>
+                <div class="contact" data-user="6">
+                    <img src="img/img6.jpg" alt="User 6">
+                    <div class="contact-info">
+                        <h4>idoit boy</h4>
+                        <p>Last message...</p>
+                        <span class="time">Yesterday</span>
+                    </div>
+                </div>
+                <div class="contact" data-user="7">
+                    <img src="img/img7.jpg" alt="User 7">
+                    <div class="contact-info">
+                        <h4>mentor</h4>
+                        <p>Last message...</p>
+                        <span class="time">Yesterday</span>
+                    </div>
+                </div>
+                <div class="contact" data-user="8">
+                    <img src="img/img8.jpg" alt="User 8">
+                    <div class="contact-info">
+                        <h4>mumu boy</h4>
+                        <p>Last message...</p>
+                        <span class="time">Yesterday</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Chat Window -->
+        <div class="chat-window">
+            <header class="chat-header">
+                <img src="img/img1.jpg" alt="User 1" id="chatHeaderImg">
+                <div class="chat-header-info">
+                    <h4 id="chatHeaderName">hanna</h4>
+                    <p>Online</p>
+                </div>
+                <div class="chat-header-icons">
+                    <img src="img/upload-icon.png" alt="Upload File" class="icon" id="fileUploadBtn">
+                    <img src="img/search-icon.png" alt="Search Chat" class="icon">
+                    <img src="img/menu-icon.png" alt="Menu" class="icon">
+                </div>
+            </header>
+            <div class="chat-content" id="chatContent">
+                <!-- Sample Chat history (10 messages) -->
+                <div class="message received" data-user="1">
+                    <p>Hi! How are you?</p>
+                    <span class="time">10:45 AM</span>
+                </div>
+                <div class="message sent" data-user="1">
+                    <p>I’m good! How about you?</p>
+                    <span class="time">10:46 AM</span>
+                </div>
+                <div class="message received" data-user="1">
+                    <p>What are you up to?</p>
+                    <span class="time">10:47 AM</span>
+                </div>
+                <div class="message sent" data-user="1">
+                    <p>Just working on a project.</p>
+                    <span class="time">10:48 AM</span>
+                </div>
+                <div class="message received" data-user="1">
+                    <p>Sounds interesting! Tell me more.</p>
+                    <span class="time">10:50 AM</span>
+                </div>
+                <div class="message sent" data-user="1">
+                    <p>I’m creating a clone of WhatsApp Web using HTML, CSS, and JavaScript.</p>
+                    <span class="time">10:51 AM</span>
+                </div>
+                <div class="message received" data-user="1">
+                    <p>Cool! How’s it going?</p>
+                    <span class="time">10:52 AM</span>
+                </div>
+                <div class="message sent" data-user="1">
+                    <p>It’s coming along nicely.</p>
+                    <span class="time">10:53 AM</span>
+                </div>
+                <div class="message received" data-user="1">
+                    <p>Can’t wait to see the final version!</p>
+                    <span class="time">10:54 AM</span>
+                </div>
+                <div class="message sent" data-user="1">
+                    <p>Thanks!</p>
+                    <span class="time">10:55 AM</span>
+                </div>
+            </div>
+
+            <!-- Message input area -->
+            <div class="message-input">
+                <input type="text" placeholder="Type a message" id="messageBox">
+                <button id="sendBtn"><img src="img/send-icon.png" alt="Send"></button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
